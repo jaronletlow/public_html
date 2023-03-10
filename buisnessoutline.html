@@ -3,9 +3,80 @@
 <head>
     <title>Buisness Outline</title>
     <!-Designed By: Jaron Letlow: Spring 2023-->
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+      background-color: violet;
+      }
+  
+      td {
+          color: white;
+          font-family: "Arial"
+      }
+  
+      table {
+          background-color: rgb(50, 50, 50);
+      }
+  
+      .page {
+          color: white;
+          font-size: 18px;
+          transition: opacity 100ms ease;
+      }
+  
+      .links:hover > .page {
+          opacity: 0.4;
+      }
+  
+      .links:hover > .page:hover {
+              opacity: 1;
+  
+      }
+      .links a {
+          text-decoration: none;
+      }
+  
+      .zoompic {
+          overflow: hidden;
+          margin: 0 auto;
+      }
+  
+      .zoompic img {
+          display: block;
+          margin: auto;
+          width: 50%;
+          transition: 500ms all ease-in-out;
+      }
+  
+      .zoompic img:hover {
+          transform: scale(1.5);
+      }
+  
+      #references , th {
+          border: 1px solid white;
+          border-collapse: collapse;
+          padding: 4px;
+      }
+  
+      .center {
+          text-align: center;
+          list-style-position: inside;
+      }
+  
+      .about_photo{
+          display: block;
+          margin: auto;
+          width: 150px;
+          height: 200px;
+      }
+  
+      p a {
+          color: violet;
+      }
+    </style>
 </head>
-<body>
+<body color="violet">
+
+  <br>
   <table align="center" , width="800px" padding="15px">
   <tr>
   <td>
@@ -25,10 +96,12 @@
           <p>Email Address</p>
           <p>Phone Number</p>
         </center>
+        <br>
         <p align="center">
           This blurb will explain what our company is all about, and it doesn't have to be the longest, just had to be a good description.
           Someone else will right this and make it cool
         </p>
+        <br>
         <h3 class="center"><u>Goal Example for Display Purpose</u></h3>
         <ol class="center">
           <li>Goal 1</li>
@@ -44,6 +117,7 @@
           <li>Goal 5</li>
           <li>Goal 6</li>
         </ol>
+        <br>
         <p>
           This is where we have to talk about to different products and or services we offer.
           We have to include a <a href="https://www.apple.com">link</a> to the internet and take up at least four lines
@@ -57,5 +131,6 @@
   </td>
   </tr>
   </table>
+  <br>
 </body>
 </html>

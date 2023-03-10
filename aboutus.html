@@ -3,9 +3,79 @@
 <head>
     <title>About Us</title>
     <!-Designed By: Jaron Letlow: Spring 2023-->
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+      background-color: violet;
+      }
+  
+      td {
+          color: white;
+          font-family: "Arial"
+      }
+  
+      table {
+          background-color: rgb(50, 50, 50);
+      }
+  
+      .page {
+          color: white;
+          font-size: 18px;
+          transition: opacity 100ms ease;
+      }
+  
+      .links:hover > .page {
+          opacity: 0.4;
+      }
+  
+      .links:hover > .page:hover {
+              opacity: 1;
+  
+      }
+      .links a {
+          text-decoration: none;
+      }
+  
+      .zoompic {
+          overflow: hidden;
+          margin: 0 auto;
+      }
+  
+      .zoompic img {
+          display: block;
+          margin: auto;
+          width: 50%;
+          transition: 500ms all ease-in-out;
+      }
+  
+      .zoompic img:hover {
+          transform: scale(1.5);
+      }
+  
+      #references , th {
+          border: 1px solid white;
+          border-collapse: collapse;
+          padding: 4px;
+      }
+  
+      .center {
+          text-align: center;
+          list-style-position: inside;
+      }
+  
+      .about_photo{
+          display: block;
+          margin: auto;
+          width: 150px;
+          height: 200px;
+      }
+  
+      p a {
+          color: violet;
+      }
+    </style>
 </head>
 <body>
+  <br>
   <table align="center" , width="800px">
   <tr>
   <td>
@@ -19,24 +89,28 @@
       <a class="page"><u>About Us</u></a>
     </center>
     <hr width="40%" />
+    <br>
     <img class="about_photo" src="Buisness_Image.jpeg">
     <h4 align="center">Group member 1</h4>
     <p align="center">
       Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
       It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
     </p>
+    <br>
     <img class="about_photo" src="Buisness_Image.jpeg">
     <h4 align="center">Group member 2</h4>
     <p align="center">
       Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
       It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
     </p>
+    <br>
     <img class="about_photo" src="Buisness_Image.jpeg">
     <h4 align="center">Group member 3</h4>
     <p align="center">
       Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
       It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
     </p>
+    <br>
     <img class="about_photo" src="Buisness_Image.jpeg">
     <h4 align="center">Group member 4</h4>
     <p align="center">
@@ -46,10 +120,12 @@
     <hr width="40%" />
     <center class="links">
       <a href="mailto:jron13@tamu.edu" class="page">Contact Us</a>
+      
     </center>
 
   </td>
   </tr>
   </table>
+  <br>
 </body>
 </html>

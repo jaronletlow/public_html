@@ -3,10 +3,79 @@
 <head>
   <title>Buisness Home</title>
   <!-Designed By: Jaron Letlow: Spring 2023-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+    background-color: violet;
+    }
+
+    td {
+        color: white;
+        font-family: "Arial"
+    }
+
+    table {
+        background-color: rgb(50, 50, 50);
+    }
+
+    .page {
+        color: white;
+        font-size: 18px;
+        transition: opacity 100ms ease;
+    }
+
+    .links:hover > .page {
+        opacity: 0.4;
+    }
+
+    .links:hover > .page:hover {
+            opacity: 1;
+
+    }
+    .links a {
+        text-decoration: none;
+    }
+
+    .zoompic {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .zoompic img {
+        display: block;
+        margin: auto;
+        width: 50%;
+        transition: 500ms all ease-in-out;
+    }
+
+    .zoompic img:hover {
+        transform: scale(1.5);
+    }
+
+    #references , th {
+        border: 1px solid white;
+        border-collapse: collapse;
+        padding: 4px;
+    }
+
+    .center {
+        text-align: center;
+        list-style-position: inside;
+    }
+
+    .about_photo{
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 200px;
+    }
+
+    p a {
+        color: violet;
+    }
+  </style>
 </head>
 <body>
+  <br>
   <table align="center" width="800px" margin="15px">
   <tr>
   <td>
@@ -21,7 +90,7 @@
     </center>
     <hr width="40%" />
     <div class="zoompic">
-      <img src="Towers.webp" alt="Dumb picture of Jaron" />
+      <img src="Towers.webp" alt="Some buildings" />
     </div>
     <p align="center"> This is a sample paragraph to see how it behaves in relation to the picture.
         We will have to type about why we chose the <b>buisness name</b> that hasn't been chosen yet. 
@@ -58,5 +127,6 @@
   </td>
   </tr>
   </table>
+  <br>
 </body>
 </html>
