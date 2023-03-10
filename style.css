@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(40, 40, 40);
+}
+
+td {
+    color: white;
+}
+
+table {
+    background-color: blueviolet;
+}
+
+.page {
+    color: blue;
+    transition: opacity 100ms ease;
+}
+
+.links:hover > .page {
+    opacity: 0.4;
+}
+
+.links:hover > .page:hover {
+        opacity: 1;
+
+}
+
+.zoompic {
+    width 300px;
+    height 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.zoompic img {
+    width: 50%;
+    transition: 500ms all ease-in-out;
+}
+
+.zoompic img:hover {
+    transform: scale(1.5);
+}
