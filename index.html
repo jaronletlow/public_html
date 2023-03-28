@@ -2,77 +2,155 @@
 <html>
 <head>
   <title>Buisness Home</title>
-  <!-Designed By: Jaron Letlow: Spring 2023->
+  <!-Designed By: Jaron Letlow: Spring 2023-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --dark-mode-text: white;
+      --dark-mode-bg-color: rgb(50, 50, 50);
+      --light-mode-text: black;
+      --light-mode-bg-color: white;
+      --text: var(--dark-mode-text);
+      --bg-color: var(--dark-mode-bg-color);
+    }
+    @keyframes colorshift {
+        0% {background-color: #552586;}
+        10% {background-color: #6A359C;}
+        20% {background-color: #804FB3;}
+        30% {background-color: #9969C7;}
+        50% {background-color: #B589D6;}
+        60% {background-color: #9969C7;}
+        70% {background-color: #804FB3;}
+        80% {background-color: #6A359C;}
+        100% {background-color: #552586;}
+      }
+
     body {
-    background-color: violet;
+      animation : colorshift 10s linear infinite;
+    }
+
+    button {
+      margin-left: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Kanit', sans-serif;
+      font-size: 18px;
+    }
+
+    button:hover {
+      color: white;
+    }
+
+    .light-mode {
+      --text: var(--light-mode-text);
+      --bg-color: var(--light-mode-bg-color);
     }
 
     td {
-        color: white;
-        font-family: "Arial"
+      color: var(--text);
+      font-family: 'Kanit', sans-serif;
     }
 
     table {
-        background-color: rgb(50, 50, 50);
+      background-color: var(--bg-color);
     }
 
     .page {
-        color: white;
-        font-size: 18px;
-        transition: opacity 100ms ease;
+      color: var(--text);
+      font-size: 23px;
+      transition: opacity 250ms ease-in-out;
     }
 
     .links:hover > .page {
-        opacity: 0.4;
+      opacity: 0.4;
+      text-decoration: none;
     }
 
     .links:hover > .page:hover {
-            opacity: 1;
-
+      opacity: 1;
+      text-decoration: underline;
     }
     .links a {
-        text-decoration: none;
-        padding: 25px;
+      text-decoration: none;
+      padding: 25px;
+      opacity: 0.4;
     }
 
     .zoompic {
-        overflow: hidden;
-        margin: 0 auto;
+      overflow: hidden;
+      margin: 0 auto;
+      width: 50%;
     }
 
     .zoompic img {
-        display: block;
-        margin: auto;
-        width: 50%;
+      display: block;
+      margin: auto;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .zoompic img:hover {
+      transform: scale(1.25);
+    }
+
+    .footer {
+      margin-top: 5px;
+      margin-bottom: 6px;
+    }
+
+    .footer a {
+      color: var(--text);
+      font-size: 20px;
+      text-decoration: none;;
+    }
+
+    .footer:hover > .email:hover {
+      text-decoration: underline;
     }
 
     #references , th {
-        border: 1px solid white;
-        border-collapse: collapse;
-        padding: 4px;
+      border: 1px solid var(--text);
+      border-collapse: collapse;
+      padding: 4px;
     }
 
     p a {
-        color: violet;
+      color: violet;
     }
+
+    a[href="#"] {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    p {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+
+
   </style>
 </head>
-<body>
+<body class="light-mode">
   <br>
+  <div class="dark-mode">
   <table align="center" width="800px" margin="15px">
   <tr>
   <td>
     <h1 align="center">Buisness Name</h1>
     <h1 align="center">Group Members: Jaron Letlow</h1>
     <h1 align="center">Date: March 10th 2023</h1>
-    <hr width="50%" />
+    <hr width="75%" />
     <center class="links">
-      <a class="page"><u>Home</u></a>
+      <a href="#" class="page">Home</a>
       <a href="buisnessoutline.html" class="page">Buisness Outline</a>
       <a href="aboutus.html" class="page">About Us</a>
     </center>
-    <hr width="50%" />
+    <hr width="75%" />
     <div class="zoompic">
       <img src="Towers.webp" alt="Some buildings" />
     </div>
@@ -103,14 +181,22 @@
         </tr>
       </table>
     </center>
-    <hr width="50%" />
-    <center class="links">
-      <a href="mailto:jron13@tamu.edu" class="page">Contact Us</a>
+    <hr width="75%" />
+    <center class="footer">
+      <a href="mailto:jron13@tamu.edu" class="email">Contact Us</a>
+      <button onclick=darkMode()>Dark/Light Mode</button>
+      <script>
+        function darkMode(){
+          var element = document.body;
+          element.classList.toggle("light-mode")
+        }
+      </script>
     </center>
 
   </td>
   </tr>
   </table>
+  </div>
   <br>
 </body>
 </html>

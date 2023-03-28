@@ -3,38 +3,86 @@
 <head>
     <title>Buisness Outline</title>
     <!-Designed By: Jaron Letlow: Spring 2023-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <style>
-      body {
-      background-color: violet;
+      :root {
+      --dark-mode-text: white;
+      --dark-mode-bg-color: rgb(50, 50, 50);
+      --light-mode-text: black;
+      --light-mode-bg-color: white;
+      --text: var(--dark-mode-text);
+      --bg-color: var(--dark-mode-bg-color);
+    }
+      @keyframes colorshift {
+        0% {background-color: #552586;}
+        10% {background-color: #6A359C;}
+        20% {background-color: #804FB3;}
+        30% {background-color: #9969C7;}
+        50% {background-color: #B589D6;}
+        60% {background-color: #9969C7;}
+        70% {background-color: #804FB3;}
+        80% {background-color: #6A359C;}
+        100% {background-color: #552586;}
       }
+
+      body {
+        animation : colorshift 10s linear infinite;
+      }
+
+      button {
+      margin-left: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Kanit', sans-serif;
+      font-size: 18px;
+    }
+
+    button:hover {
+      color: var(--text);
+    }
+
+    .light-mode {
+      --text: var(--light-mode-text);
+      --bg-color: var(--light-mode-bg-color);
+    }
   
       td {
-          color: white;
-          font-family: "Arial"
+          color: var(--text);
+          font-family: 'Kanit', sans-serif;
       }
   
       table {
-          background-color: rgb(50, 50, 50);
+          background-color: var(--bg-color);
       }
   
       .page {
-          color: white;
-          font-size: 18px;
-          transition: opacity 100ms ease;
-      }
-  
-      .links:hover > .page {
-          opacity: 0.4;
-      }
-  
-      .links:hover > .page:hover {
-              opacity: 1;
-  
-      }
-      .links a {
-        text-decoration: none;
-        padding: 25px;
+      color: var(--text);
+      font-size: 23px;
+      transition: opacity 250ms ease-in-out;
     }
+
+    .links:hover > .page {
+      opacity: 0.4;
+      text-decoration: none;
+    }
+
+    .links:hover > .page:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .links a {
+      text-decoration: none;
+      padding: 25px;
+      opacity: 0.4;
+    }
+
+      a[href="#"] {
+        opacity: 1;
+        text-decoration: underline;
+      }
   
       .center {
           text-align: center;
@@ -44,9 +92,31 @@
       p a {
           color: violet;
       }
+
+      .footer {
+      margin-top: 5px;
+      margin-bottom: 6px;
+      
+    }
+
+    .footer a {
+      color: var(--text);
+      font-size: 20px;
+      transition: opacity 100ms ease;
+      text-decoration: none;;
+    }
+
+    .footer:hover > .email {
+      text-decoration: underline;
+    }
+
+    p {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     </style>
 </head>
-<body color="violet">
+<body class="light-mode">
 
   <br>
   <table align="center" , width="800px" padding="15px">
@@ -55,13 +125,13 @@
     <h1 align="center">Buisness Outline</h1>
     <h1 align="center">Group Members: Jaron Letlow</h1>
     <h1 align="center">Date: March 10th 2023</h1>
-    <hr width="50%" />
+    <hr width="75%" />
       <center class="links">
         <a href="index.html" class="page">Home</a>
-        <a class="page"><u>Buisness Outline</u></a>
+        <a href="#"  class="page">Buisness Outline</a>
         <a href="aboutus.html" class="page">About Us</a>
       </center>
-        <hr width="50%" />
+        <hr width="75%" />
       <center>
         <h3>Contact Information:</h3>
           <p>Buisness Name</p>
@@ -95,11 +165,17 @@
           We have to include a <a href="https://www.tamuforme.com/about">link</a> to the internet and take up at least four lines
         </p>
         <p>Link to our <a href="buisness_plan.docx">BP word document</a> and our <a href="buisness_plan.pdf">BP PDF document</a></p>
-        <hr width="50%" />
-        <center class="links">
-          <a href="mailto:jron13@tamu.edu" class="page">Contact Us</a>
+        <hr width="75%" />
+        <center class="footer">
+          <a href="mailto:jron13@tamu.edu" class="email">Contact Us</a>
+          <button onclick=darkMode()>Dark/Light Mode</button>
+      <script>
+        function darkMode(){
+          var element = document.body;
+          element.classList.toggle("light-mode")
+        }
+      </script>
         </center>
-
   </td>
   </tr>
   </table>
