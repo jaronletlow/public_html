@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <style>
       :root {
-      --dark-mode-text: white;
-      --dark-mode-bg-color: rgb(50, 50, 50);
-      --light-mode-text: black;
-      --light-mode-bg-color: white;
-      --text: var(--dark-mode-text);
-      --bg-color: var(--dark-mode-bg-color);
-      --font: 'Baloo 2', sans-serif;;
-    }
+        --dark-mode-text: white;
+        --dark-mode-bg-color: rgb(50, 50, 50);
+        --light-mode-text: black;
+        --light-mode-bg-color: white;
+        --text: var(--light-mode-text);
+        --bg-color: var(--light-mode-bg-color);
+        --font: 'Baloo 2', sans-serif;
+      }
 
     @keyframes colorshift {
         0% {background-color: #febf01;}
@@ -45,12 +45,12 @@
     }
 
     button:hover {
-      color: var(--text);
+      background-color: orange;
     }
 
     .light-mode {
-      --text: var(--light-mode-text);
-      --bg-color: var(--light-mode-bg-color);
+      --text: var(--dark-mode-text);
+      --bg-color: var(--dark-mode-bg-color);
     }
   
       td {
@@ -132,17 +132,21 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 750px;
+      width: 800px;
     }
 
     .image-container {
       float: left;
       width: 275px;
+      align-items: center;
+      justify-content: center;
     }
 
     .para-container {
       float: left;
       width: 475px;
+      align-items: center;
+      justify-content: center;
     }
 
     </style>
@@ -176,7 +180,7 @@
     </p>
     </div>
     </div>
-    <br>
+
     <div class="about-container">
       <div class="para-container">
       <p align="center">
@@ -191,7 +195,7 @@
         <h4 align="center">Madeleine Elliott</h4>
       </div>
       </div>
-    <br>
+
     <div class="about-container">
       <div class="image-container">
       <img class="about_photo" src="/aboutUsImgs/aboutrachel.JPG">
@@ -205,7 +209,7 @@
       </p>
       </div>
       </div>
-    <br>
+
     <div class="about-container">
       <div class="para-container">
       <p align="center">
@@ -221,7 +225,7 @@
         <h4 align="center">Mia Clay</h4>
       </div>
       </div>
-    <br>
+
     <div class="about-container">
       <div class="image-container">
       <img class="about_photo" src="/aboutUsImgs/laurenhoffman.png">

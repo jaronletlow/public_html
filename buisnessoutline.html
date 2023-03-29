@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <style>
       :root {
-      --dark-mode-text: white;
-      --dark-mode-bg-color: rgb(50, 50, 50);
-      --light-mode-text: black;
-      --light-mode-bg-color: white;
-      --text: var(--dark-mode-text);
-      --bg-color: var(--dark-mode-bg-color);
-      --font: 'Baloo 2', sans-serif;
-    }
+        --dark-mode-text: white;
+        --dark-mode-bg-color: rgb(50, 50, 50);
+        --light-mode-text: black;
+        --light-mode-bg-color: white;
+        --text: var(--light-mode-text);
+        --bg-color: var(--light-mode-bg-color);
+        --font: 'Baloo 2', sans-serif;
+      }
     @keyframes colorshift {
         0% {background-color: #febf01;}
         10% {background-color: #ffaf03;}
@@ -43,12 +43,12 @@
     }
 
     button:hover {
-      color: var(--text);
+      background-color: orange;
     }
 
     .light-mode {
-      --text: var(--light-mode-text);
-      --bg-color: var(--light-mode-bg-color);
+      --text: var(--dark-mode-text);
+      --bg-color: var(--dark-mode-bg-color);
     }
   
       td {
@@ -91,6 +91,12 @@
           list-style-position: inside;
       }
 
+      .center-list{
+        text-align: center;
+        list-style-position: inside;
+        padding-right: 40px;
+      }
+
       p a {
           color: orange;
       }
@@ -113,8 +119,8 @@
     }
 
     p {
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
     .title {
@@ -122,6 +128,16 @@
       margin-bottom: 1px;
       padding-left: 15px;
       padding-right: 15px;
+    }
+
+    .internal{
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .internal:hover {
+      text-decoration: underline;
+      color: orange;
     }
 
     </style>
@@ -143,35 +159,40 @@
         <hr width="75%" />
       <center>
         <h3>Contact Information:</h3>
-          <p>Buisness Name</p>
-          <p>Email Address</p>
-          <p>Phone Number</p>
+          <p>Buisness Name: <b>The Corndog Joint</b></p>
+          <p>Email Address: <a class="internal" href="#">aggiehotdiggitydogs@gmail.com</a></p>
+          <p>Phone Number: <a class="internal" href="#">(123) 555-1234</a></p>
         </center>
-        <br>
+
         <p align="center">
-          This blurb will explain what our company is all about, and it doesn't have to be the longest, just had to be a good description.
-          Someone else will right this and make it cool
+          Our food truck is used as a vendor at state fairs and private events.
+          When not at any of these events, the truck is located at a food truck restaurant at a location with 5 other food trucks.
+          The Corndog Joint serves two different sizes of corn dogs, with multiple different sides and drinks.
         </p>
-        <br>
-        <h3 class="center"><u>Goal Example for Display Purpose</u></h3>
-        <ol class="center">
-          <li>Goal 1</li>
-          <li>Goal 2</li>
+
+        <h3 class="center"><u>Our Short Term Goals</u></h3>
+        <ol class="center-list">
+          <li>Be booked at a private event at least once every weekend</li>
+          <li>During the week, sell at least 300 corn dogs a day</li>
         </ol>
-        <h3 class="center"><u>Goal Example for Display Purpose</u></h3>
-        <ol type="I" class="center">
-          <li>Goal 3</li>
-          <li>Goal 4</li>
+        <h3 class="center"><u>Our Goals for the Year</u></h3>
+        <ol type="I" class="center-list">
+          <li>Be able to offer a wider variery of corndogs</li>
+          <li>Purchase portable picnic tables to use at events</li>
         </ol>
-        <h3 class="center"><u>Goal Example for Display Purpose</u></h3>
-        <ul class="center">
-          <li>Goal 5</li>
-          <li>Goal 6</li>
+        <h3 class="center"><u>Long term goals</u></h3>
+        <ul class="center-list">
+          <li>Purchase more trucks to service multiple events at the same time</li>
+          <li>Expand area of operation</li>
         </ol>
-        <br>
+
         <p>
-          This is where we have to talk about to different products and or services we offer.
-          We have to include a <a href="https://www.tamuforme.com/about">link</a> to the internet and take up at least four lines
+          Products or services offered – regular corndog, footlong corndog,
+          french fries, tator tots, onion rings, mozzarella sticks, fountain drink,
+          lemonade, sweet/unsweet tea. Our business strategy focuses on serving quality food at a reasonable price to people of all ages.
+          We have recently adopted <a href="https://aws.amazon.com/free/?trk=fce796e8-4ceb-48e0-9767-89f7873fac3d&sc_channel=ps&ef_id=Cj0KCQjww4-hBhCtARIsAC9gR3b3YoT4lXJYAabOcL0ZlB9d73Q5bMDrlY32nTRfYXXd_ccFwGSMHbwaAp06EALw_wcB:G:s&s_kwcid=AL!4422!3!432339156147!e!!g!!amazon%20web%20services!1644045032!68366401812&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">Amazon Web Services</a>
+          to track clickstream anaylitics through all our forms of social media.
+          Our target audience is anyone that loves corndogs and is ready to eat! 
         </p>
         <p>Link to our <a href="buisness_plan.docx">BP word document</a> and our <a href="buisness_plan.pdf">BP PDF document</a></p>
         <hr width="75%" />
