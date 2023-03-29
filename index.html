@@ -3,9 +3,9 @@
 <head>
   <title>Buisness Home</title>
   <!-Designed By: Jaron Letlow: Spring 2023-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
   <style>
     :root {
       --dark-mode-text: white;
@@ -14,21 +14,23 @@
       --light-mode-bg-color: white;
       --text: var(--dark-mode-text);
       --bg-color: var(--dark-mode-bg-color);
+      --font: 'Baloo 2', sans-serif;
     }
     @keyframes colorshift {
-        0% {background-color: #552586;}
-        10% {background-color: #6A359C;}
-        20% {background-color: #804FB3;}
-        30% {background-color: #9969C7;}
-        50% {background-color: #B589D6;}
-        60% {background-color: #9969C7;}
-        70% {background-color: #804FB3;}
-        80% {background-color: #6A359C;}
-        100% {background-color: #552586;}
+        0% {background-color: #febf01;}
+        10% {background-color: #ffaf03;}
+        20% {background-color: #FD9A01;}
+        30% {background-color: #FD6104;}
+        50% {background-color: #ff5805;}
+        60% {background-color: #ff5805;}
+        70% {background-color: #FD6104;}
+        80% {background-color: #FD9A01;}
+        90% {background-color: #ffaf03;}
+        100% {background-color: #febf01;}
       }
 
     body {
-      animation : colorshift 10s linear infinite;
+      animation : colorshift 15s linear infinite;
     }
 
     button {
@@ -36,8 +38,8 @@
       padding: 10px;
       border-radius: 10px;
       border: none;
-      font-family: 'Kanit', sans-serif;
-      font-size: 18px;
+      font-family: var(--font);
+      font-size: 20px;
     }
 
     button:hover {
@@ -51,7 +53,7 @@
 
     td {
       color: var(--text);
-      font-family: 'Kanit', sans-serif;
+      font-family: var(--font);
     }
 
     table {
@@ -60,7 +62,7 @@
 
     .page {
       color: var(--text);
-      font-size: 23px;
+      font-size: 25px;
       transition: opacity 250ms ease-in-out;
     }
 
@@ -89,11 +91,11 @@
       display: block;
       margin: auto;
       width: 100%;
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.3s ease-in-out;
     }
 
     .zoompic img:hover {
-      transform: scale(1.25);
+      transform: scale(1.05);
     }
 
     .footer {
@@ -130,8 +132,13 @@
       padding-left: 15px;
       padding-right: 15px;
     }
-    
 
+    .title {
+      font-size: 50px;
+      margin-bottom: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
   </style>
 </head>
@@ -141,9 +148,9 @@
   <table align="center" width="800px" margin="15px">
   <tr>
   <td>
-    <h1 align="center">Buisness Name</h1>
-    <h1 align="center">Group Members: Jaron Letlow</h1>
-    <h1 align="center">Date: March 10th 2023</h1>
+    <h1 align="center" class="title">THE CORN DOG JOINT</h1>
+    <h1 align="center">Group Members: Jaron Letlow, Rachel Sedita, Mia Clay, Lauren Hoffman, and Madeleine Elliott</h1>
+    <h1 align="center">Date: March 29th 2023</h1>
     <hr width="75%" />
     <center class="links">
       <a href="#" class="page">Home</a>
@@ -152,7 +159,7 @@
     </center>
     <hr width="75%" />
     <div class="zoompic">
-      <img src="Towers.webp" alt="Some buildings" />
+      <img src="corndogs.jpg" alt="corndogs" />
     </div>
     <p align="center"> This is a sample paragraph to see how it behaves in relation to the picture.
         We will have to type about why we chose the <b>buisness name</b> that hasn't been chosen yet. 

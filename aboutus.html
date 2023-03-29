@@ -3,9 +3,9 @@
 <head>
     <title>About Us</title>
     <!-Designed By: Jaron Letlow: Spring 2023-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <style>
       :root {
       --dark-mode-text: white;
@@ -14,18 +14,20 @@
       --light-mode-bg-color: white;
       --text: var(--dark-mode-text);
       --bg-color: var(--dark-mode-bg-color);
+      --font: 'Baloo 2', sans-serif;;
     }
 
-      @keyframes colorshift {
-        0% {background-color: #552586;}
-        10% {background-color: #6A359C;}
-        20% {background-color: #804FB3;}
-        30% {background-color: #9969C7;}
-        50% {background-color: #B589D6;}
-        60% {background-color: #9969C7;}
-        70% {background-color: #804FB3;}
-        80% {background-color: #6A359C;}
-        100% {background-color: #552586;}
+    @keyframes colorshift {
+        0% {background-color: #febf01;}
+        10% {background-color: #ffaf03;}
+        20% {background-color: #FD9A01;}
+        30% {background-color: #FD6104;}
+        50% {background-color: #ff5805;}
+        60% {background-color: #ff5805;}
+        70% {background-color: #FD6104;}
+        80% {background-color: #FD9A01;}
+        90% {background-color: #ffaf03;}
+        100% {background-color: #febf01;}
       }
       
       body {
@@ -38,8 +40,8 @@
       padding: 10px;
       border-radius: 10px;
       border: none;
-      font-family: 'Kanit', sans-serif;
-      font-size: 18px;
+      font-family: var(--font);
+      font-size: 20px;
     }
 
     button:hover {
@@ -53,7 +55,7 @@
   
       td {
           color: var(--text);
-          font-family: 'Kanit', sans-serif;
+          font-family: var(--font);
       }
   
       table {
@@ -62,7 +64,7 @@
   
       .page {
       color: var(--text);
-      font-size: 23px;
+      font-size: 25px;
       transition: opacity 250ms ease-in-out;
     }
 
@@ -89,8 +91,8 @@
       .about_photo{
           display: block;
           margin: auto;
-          width: 150px;
-          height: 200px;
+          width: 200px;
+          height: 275px;
       }
   
       p a {
@@ -118,6 +120,29 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+
+    .title {
+      font-size: 50px;
+      margin-bottom: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .about-container {
+      display: flex;
+      width: 800px;
+    }
+
+    .image-container {
+      float: left;
+      width: 400px;
+    }
+
+    .para-container {
+      float: left;
+      width: 400px;
+    }
+
     </style>
 </head>
 <body class="light-mode">
@@ -125,9 +150,8 @@
   <table align="center" , width="800px">
   <tr>
   <td>
-    <h1 align="center">About Us</h1>
-    <h1 align="center">Group Members: Jaron Letlow</h1>
-    <h1 align="center">Date: March 10th 2023</h1>
+    <h1 align="center" class="title">THE CORN DOG JOINT</h1>
+    <h1 align="center">Group Members: Jaron Letlow, Rachel Sedita, Mia Clay, Lauren Hoffman, and Madeleine Elliott</h1>    <h1 align="center">Date: March 29th 2023</h1>
     <hr width="75%" />
     <center class="links">
       <a href="index.html" class="page">Home</a>
@@ -136,33 +160,80 @@
     </center>
     <hr width="75%" />
     <br>
-    <img class="about_photo" src="Buisness_Image.jpeg">
-    <h4 align="center">Group member 1</h4>
+    <div class="about-container">
+    <div class="image-container">
+    <img class="about_photo" src="/aboutUsImgs/aboutjaron.JPG">
+    <h4 align="center">Jaron Letlow</h4>
+    </div>
+    <div class="para-container">
     <p align="center">
-      Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
-      It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
+      Howdy! My name is Jaron Letlow and I am a sophmore Industrial Distribution Major from Chico CA.
+      My favorite things to do include playing music, cooking, and coding. Back at home I have my mom Teresa, my dad Jeff, my little brother 
+      Asher, and my dog Star. In the future I think want to work in data anaylitics, but being constantly exposed 
+      to new ideas keeps this constantly changing. If you want to reach out for any reason you can find me <a href="mailto:jron13@tamu.edu">here</a>.
     </p>
+    </div>
+    </div>
     <br>
-    <img class="about_photo" src="Buisness_Image.jpeg">
-    <h4 align="center">Group member 2</h4>
-    <p align="center">
-      Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
-      It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
-    </p>
+    <div class="about-container">
+      <div class="image-container">
+      <p align="center">
+        Howdy! My name is Madeleine Elliott, and I am a Sophomore from Tomball, Texas. I am an Industrial Distribution major, and I want to eventually have a job in Supply Chain Management.
+        I grew up competitive dancing and I work for a dance company in my free time.
+        I love hanging out with my friends and I am also a lover of all things corn dog.
+        If you need to reach me, click <a href="mailto:madeleine_elliott@tamu.edu">here</a>.
+      </p>
+      </div>
+      <div class="para-container">
+        <img class="about_photo" src="/aboutUsImgs/about3.jpg">
+        <h4 align="center">Madeleine Elliott</h4>
+      </div>
+      </div>
     <br>
-    <img class="about_photo" src="Buisness_Image.jpeg">
-    <h4 align="center">Group member 3</h4>
-    <p align="center">
-      Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
-      It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
-    </p>
+    <div class="about-container">
+      <div class="image-container">
+      <img class="about_photo" src="/aboutUsImgs/aboutrachel.JPG">
+      <h4 align="center">Rachel Sedita</h4>
+      </div>
+      <div class="para-container">
+      <p align="center">
+        Hey y’all, my name is Rachel Sedita and I am the proud chef of the Corn Dog Joint! I am from Houston, Texas and love eating corn dogs in my free time. 
+        Apart from corn dogs, I love to snowboard, play with my friends, sleep with socks on, and find new music! You can reach me 
+        <a href="mailto:rachelsedita@tamu.edu">here</a>.
+      </p>
+      </div>
+      </div>
     <br>
-    <img class="about_photo" src="Buisness_Image.jpeg">
-    <h4 align="center">Group member 4</h4>
-    <p align="center">
-      Write five lines about yourself. You can include hobbies and other things. At the end you must link your email.
-      It can be a fake email but it has to be a reference you can copy that <a href="mailto:youremail@example.com">here</a>
-    </p>
+    <div class="about-container">
+      <div class="image-container">
+      <p align="center">
+        Howdy! My name is Mia Clay and I am a junior economics major from Houston, Texas.
+        I am currently in the Master’s of Economics fast track program and am planning to graduate with my bachelors and masters in economics in 2025.
+        I love listening to music, being involved on campus, and playing water polo.
+        The ocean is also my favorite place in the world and I can spend hours on the beach.
+        If you need to reach me, you can do so <a href="mailto:mia.clay@tamu.edu">here</a>.
+      </p>
+      </div>
+      <div class="para-container">
+        <img class="about_photo" src="/aboutUsImgs/aboutmia.jpg">
+        <h4 align="center">Mia Clay</h4>
+      </div>
+      </div>
+    <br>
+    <div class="about-container">
+      <div class="image-container">
+      <img class="about_photo" src="/aboutUsImgs/laurenhoffman.png">
+      <h4 align="center">Lauren Hoffman</h4>
+      </div>
+      <div class="para-container">
+      <p align="center">
+        Howdy y’all, my name is Lauren Hoffman and I am a Junior economics major from The Woodlands, Texas.
+        I am currently in a fast track program and working on my undergrad and masters at the same time!
+        I love Texas A&M and dogs! I grew up playing basketball my whole life and love to play often!
+        If you need to reach me, you can reach me <a href="laurenhoffman02@tamu.edu">here</a>.
+      </p>
+      </div>
+      </div>
     <hr width="75%" />
     <center class="footer">
       <a href="mailto:jron13@tamu.edu" class="email">Contact Us</a>
